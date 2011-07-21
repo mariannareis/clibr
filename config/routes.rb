@@ -6,7 +6,7 @@ Clibr::Application.routes.draw do
     match "register"  => "devise/registrations#new"
     get "login"  => "devise/sessions#new"
     get "logout" => "devise/sessions#destroy"
-end
+  end
 
 
 
