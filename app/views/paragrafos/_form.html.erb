@@ -1,0 +1,37 @@
+<script language="Javascript">
+function Contar(campo){
+  document.getElementById("Qtd").innerHTML = campo.value.length;
+  if(campo.value.length >= 700){
+    alert("Não pode ter mais de 700 caracteres");}
+  }
+</script>
+
+<%= form_for(@paragrafo) do |f| %>
+  <% if @paragrafo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@paragrafo.errors.count, "error") %> prohibited this paragrafo from being saved:</h2>
+
+      <ul>
+      <% @paragrafo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :categoria %><br />
+    <%= f.select :categoria, options_for_select(["Sucesso nas Internês", "Clássicos da literatura"]) %>
+  </div>
+  <div class="field">
+    <%= f.label :conteudo %> (máximo de 700 caracteres)<br />
+
+   <%= f.text_area :conteudo, :size => '80x10', :onKeyUp => "Contar(this);", :onLoad => "Contar(this);" %><br/>
+    <div id="Qtd">0</div>
+
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

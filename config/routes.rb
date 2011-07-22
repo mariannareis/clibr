@@ -1,6 +1,9 @@
 Clibr::Application.routes.draw do
-  devise_for :usuarios
+  get "inicio/index"
 
+  resources :paragrafos
+
+  devise_for :usuarios
 
   devise_scope :usuario do
     match "register"  => "devise/registrations#new"
@@ -8,7 +11,7 @@ Clibr::Application.routes.draw do
     get "logout" => "devise/sessions#destroy"
   end
 
-
+  root :to => "inicio#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

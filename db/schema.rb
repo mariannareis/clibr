@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110721231808) do
+ActiveRecord::Schema.define(:version => 20110721233834) do
+
+  create_table "paragrafos", :force => true do |t|
+    t.string   "categoria"
+    t.string   "conteudo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "usuarios", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false

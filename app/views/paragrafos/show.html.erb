@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Categoria:</b>
+  <%= @paragrafo.categoria %>
+</p>
+
+<p>
+  <b>Conteudo:</b>
+  <%= @paragrafo.conteudo %>
+</p>
+
+
+<%= link_to 'Edit', edit_paragrafo_path(@paragrafo) %> |
+<%= link_to 'Back', paragrafos_path %>
