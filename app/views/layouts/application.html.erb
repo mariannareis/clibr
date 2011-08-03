@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html >
+<div class="wrapper">
 <head>
   <title>Clibr</title>
   <%= stylesheet_link_tag :all %>
@@ -10,8 +11,29 @@
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
-<%= yield %>
+<div id="logo"></div>
+
+<div id= "container">
+<div id="lateralesquerda">
+  <div id="barralogo"></div>
+</div>
+
+<div id="lateraldireita">
+          <div id="barrabotoes">
+            <div id="facebook"></div>
+            <div id="twitter"></div>
+            <div id="nos"></div>
+            <div id="clibr"></div>
+          </div>
+</div>
+  <div id="conteudo">
+    <div id= "topo">Ariba</div>
+    <%= yield %>
+</div>
+
+
 
 </body>
+</div>
 </html>
 

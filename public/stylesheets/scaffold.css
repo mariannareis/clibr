@@ -1,4 +1,4 @@
-body { background-color: #00EEEE; color: #333; }
+body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -12,9 +12,9 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a { color: #308d7c; }
+a:visited { color: #039aaa; }
+a:hover { color: #199f8e; background-color:#fff; }
 
 div.field, div.actions {
   margin-bottom: 10px;
@@ -53,5 +53,241 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+
+/*#barraesquerda{*/
+/*       display: block;*/
+/*       float: left;*/
+/*       min-height: 1000px;*/
+/*       width: 70px;*/
+/*       background: red;*/
+/*       margin-right: -350px;*/
+/*}*/
+/*#centro{*/
+/*       display: block;*/
+/*       float: left;*/
+/*       min-height: 1000px;*/
+/*       position: relative;*/
+/*       z-index: 1;*/
+/*       width: 824px;*/
+/*       background-color: blue;*/
+/*}*/
+
+/*#barradireita{*/
+/*       display: block;*/
+/*       float: left;*/
+/*       min-height: 1000px;*/
+/*       float: left;*/
+/*       width: 70px;*/
+/*       background: green;*/
+/*       margin-right: -350px;*/
+/*}*/
+
+
+#container {
+       width: 100%;
+       overflow: hidden;
+       background-color: #fff;
+}
+
+
+#conteudo{
+  margin-top:-1%;
+  margin-left: 17%;
+  padding: 1% 5% 7% 0%;
+  width:62%;
+  height: 721px;
+  overflow:auto;
+  position:relative;
+  background-color:#fff;
+  text-align:justify;
+  z-index: 1;
+  background:#fff;
+
+
+}
+#lateralesquerda{
+  background-color: #318a79;
+  width:17%;
+  height: 784px;
+  float:left;
+  overflow:auto;
+  position:relative;
+  z-index: 1;
+  padding-bottom:10px;
+  padding: 2px;
+  padding-right: 10px;
+  padding-left: 0px;
+  margin-top: 0%;
+
+}
+
+#lateraldireita{
+  background-color: #318a79;
+/* background-color: #fff;*/
+  width:17%;
+  height: 784px;
+  float:right;
+  overflow:auto;
+  position:relative;
+  z-index: 2;
+  padding-left: 0px;
+  padding-right:0px;
+  padding-bottom:10px;
+  padding: 2px;
+  margin-top: 0%;
+}
+.wrapper {
+	width:960px;
+	margin:0 auto;
+
+}
+
+/*#rodape{*/
+/*    margin-left:200px;*/
+/*    clear:both;*/
+/*    width:643px;*/
+/*    margin-top: 353px;*/
+/*    height:39px;*/
+/*    position: absolute;*/
+/*    overflow:auto;*/
+/*    float:bottom;*/
+/*    background-color:yellow;*/
+/*    z-index: 0;*/
+/*    margin-left:0px;*/
+/*    text-align:center;*/
+/*    padding-top:110px;*/
+/*    padding-left:0px;*/
+/*    margin-left:0 auto;*/
+
+
+}
+#topo{
+  height: 200px;
+  background-color: #fff;
+  width:643px;
+  z-index: 0;
+  clear:both;
+  margin-left:0px;
+  padding-top:0px;
+  float: left;
+  margin:0 auto;
+}
+
+#fundobotoes{
+  /*background-color: #fff;*/
+  width:95%;
+  height: 80px;
+  float:right;
+  overflow:auto;
+  position:relative;
+  z-index: 1;
+  padding-left: 20px;
+  padding-bottom:10px;
+  padding: 2px;
+  margin-top: 600px;
+  margin-left:0px;
+
+}
+
+/*BOTÕES*/
+#facebook{
+    height:59px;
+    width:60px;
+    z-index: 3;
+    background: url(../images/facebook.png) center repeat-x;
+    background-size: 59px 60px;
+    -moz-background-size:  59px 60px;
+    -o-background-size:  59px 60px;
+    -khtml-background-size:  59px 60px;
+    position:absolute;
+    margin-top:12px;
+    margin-left:12px;
+}
+#twitter{
+    height:59px;
+    width:60px;
+    z-index: 3;
+    background: url(../images/twitter.png) center repeat-x;
+    background-size: 59px 60px;
+    -moz-background-size:  59px 60px;
+    -o-background-size:  59px 60px;
+    -khtml-background-size:  59px 60px;
+    position:absolute;
+    margin-top:12px;
+    margin-left:85px;
+}
+
+#nos{
+    height:59px;
+    width:60px;
+    z-index: 3;
+    background: url(../images/nos.png) center repeat-x;
+    background-size: 59px 60px;
+    -moz-background-size:  59px 60px;
+    -o-background-size:  59px 60px;
+    -khtml-background-size:  59px 60px;
+    position:absolute;
+    margin-top:82px;
+    margin-left:12px;
+}
+#clibr{
+    height:59px;
+    width:60px;
+    z-index: 3;
+    background: url(../images/clibr.png) center repeat-x;
+    background-size: 59px 60px;
+    -moz-background-size:  59px 60px;
+    -o-background-size:  59px 60px;
+    -khtml-background-size:  59px 60px;
+    position:absolute;
+    margin-top:82px;
+    margin-left:85px;
+}
+
+
+#barrabotoes{
+    height:150px;
+    width:102%;
+    z-index: 2;
+    background: url(../images/barra.png) center repeat-x;
+    background-size: 16% 200px;
+    -moz-background-size:  16% 200px;
+    -o-background-size:  16% 200px;
+    -khtml-background-size:  16% 200px;
+    position:relative;
+    margin-top:600px;
+    margin-left:-2px;
+    margin-right:0px;
+    z-index: 2;
+}
+
+#barralogo{
+    height:150px;
+    width:106%;
+    z-index: 2;
+    background: url(../images/barra.png) center repeat-x;
+    background-size: 16% 200px;
+    -moz-background-size:  16% 200px;
+    -o-background-size:  16% 200px;
+    -khtml-background-size:  16% 200px;
+    position:relative;
+    margin-top:600px;
+    z-index: 2;
+}
+
+#logo{
+    height:150px;
+    width:19%;
+    z-index: 4;
+    background: url(../images/logo.png) center no-repeat;
+    background-size: 80% 300px;
+    -moz-background-size:  90% 130px;
+    -o-background-size:  80% 300px;
+    -khtml-background-size:  80% 300px;
+    position:absolute;
+    margin-top:600px;
+    margin-left:-30px;
 }
 
