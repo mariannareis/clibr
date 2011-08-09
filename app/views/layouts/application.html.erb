@@ -8,30 +8,29 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
 <div id="logo"></div>
 
 <div id= "container">
 <div id="lateralesquerda">
-  <div id="barralogo"></div>
+          <div id="internes"></div>
+         <div id="troll"></div>
+          <div id="barralogo"></div>
 </div>
-
+  <div id="conteudo">
+    <div id= "topo"></div>
+    <%= yield %>
+   </div>
 <div id="lateraldireita">
+          <div id="classico"></div>
+          <div id="machado"></div>
           <div id="barrabotoes">
-            <div id="facebook"></div>
-            <div id="twitter"></div>
+            <a href="www.facebook.com/mariojorgevalle"><div id="facebook"></div></a>
+            <a href="http://www.twitter.com/clibr"><div id="twitter"></div></a>
             <div id="nos"></div>
             <div id="clibr"></div>
           </div>
 </div>
-  <div id="conteudo">
-    <div id= "topo">Ariba</div>
-    <%= yield %>
-</div>
-
-
 
 </body>
 </div>
