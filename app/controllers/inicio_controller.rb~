@@ -6,7 +6,7 @@ class InicioController < ApplicationController
       conteudo = Paragrafo.find(:all, :conditions => {:categoria => "interne"})
       for x in (0...conteudo.size)
         exibaesse = rand(conteudo.size)      
-        exibir += "&nbsp; &nbsp; &nbsp; &nbsp;" + conteudo[exibaesse].conteudo + "<br/>"
+        exibir += "&nbsp; &nbsp; &nbsp; &nbsp;" + conteudo[exibaesse] + "<br/>"
       end
 
 

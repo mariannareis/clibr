@@ -1,4 +1,4 @@
-<div id="conteudocaixa">
+<div id="conteudocaixa" name='conteudocaixa'>
 <h1>Inicio#index</h1>
 <p>Find me in app/views/inicio/index.html.erb</p>
 

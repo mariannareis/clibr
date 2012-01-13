@@ -5,7 +5,7 @@ Clibr::Application.routes.draw do
 
   resources :paragrafos
 
-  match 'inicio/gerar_internetes/:id' => 'inicio#index'
+  match 'inicio/gerar_internetes/:parametro' => 'inicio#index'
 
   devise_for :usuarios
 

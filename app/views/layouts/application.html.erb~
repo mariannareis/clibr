@@ -14,7 +14,7 @@
 <div id= "container">
 <div id="lateralesquerda">
           <div id="internes"></div> 
-<%= link_to image_tag("troll.png", :border=>0, :id => 'troll'), {:controller => :inicio, :action => :index, :parametro => 'net'}, :remote => true %>
+<%= link_to image_tag("troll.png", :border=>0, :id => 'troll'), {:controller => :inicio, :action => :index, :parametro => 'internetes'}, :remote => true %>
          
          <a href="/gerainternetes"><div id="/geraclassico"></div></a>
 </div>

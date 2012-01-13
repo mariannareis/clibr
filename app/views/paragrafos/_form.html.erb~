@@ -21,7 +21,7 @@ function Contar(campo){
 
   <div class="field">
     <%= f.label :categoria %><br />
-    <%= f.select :categoria, options_for_select([["Sucesso nas Internês", "interne"], ["Clássicos da literatura", 'literatura  ']]) %>
+    <%= f.select :categoria, options_for_select(["Sucesso nas Internês", "interne"], ["Clássicos da literatura", 'literatura']]) %>
   </div>
   <div class="field">
     <%= f.label :conteudo %> (máximo de 700 caracteres)<br />
